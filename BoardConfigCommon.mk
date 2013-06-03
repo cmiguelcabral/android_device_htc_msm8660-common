@@ -20,7 +20,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := kernel/htc/msm8660
+TARGET_KERNEL_SOURCE := /home/sultan/Downloads/android_kernel_htc_msm8660-cm-10.1
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
@@ -33,9 +33,16 @@ TARGET_ARCH := arm
 TARGET_ARCH_VARIANT := armv7-a-neon
 TARGET_CPU_SMP := true
 ARCH_ARM_HAVE_TLS_REGISTER := true
+TARGET_USES_ION := true
+ARCH_ARM_HAVE_VFP := true
+ARCH_ARM_HAVE_NEON := true 
 
 # Flags
 COMMON_GLOBAL_CFLAGS += -DQCOM_HARDWARE
+
+# Compiler Optimization
+ARCH_ARM_HIGH_OPTIMIZATION := true
+ARCH_ARM_HIGH_OPTIMIZATION_COMPAT := true 
 
 # FB legacy
 BOARD_EGL_NEEDS_LEGACY_FB := true
