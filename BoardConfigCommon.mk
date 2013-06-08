@@ -20,7 +20,7 @@ TARGET_SPECIFIC_HEADER_PATH := device/htc/msm8660-common/include
 TARGET_NO_BOOTLOADER := true
 
 # Kernel
-TARGET_KERNEL_SOURCE := /home/sultan/Downloads/android_kernel_htc_msm8660-cm-10.1
+TARGET_KERNEL_SOURCE := /home/sultan/sultan-kernel-bruce-linaro3
 
 # Platform
 TARGET_BOARD_PLATFORM := msm8660
